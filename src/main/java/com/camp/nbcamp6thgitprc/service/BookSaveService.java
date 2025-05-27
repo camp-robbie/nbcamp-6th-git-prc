@@ -17,7 +17,7 @@ public class BookSaveService {
         Book book = new Book();
         book.setTitle(request.getTitle());
         book.setContents(request.getContents());
-        book.setAuthors(String.join(",", request.getAuthors()));
+        book.setAuthors(request.getAuthors().get(0));
         book.setPublisher(request.getPublisher());
         book.setThumbnail(request.getThumbnail());
         return bookRepository.save(book);
