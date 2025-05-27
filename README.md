@@ -1,7 +1,8 @@
 📚 Kakao Book API 연동: 선택한 책 DB 저장 기능 구현 가이드
+- 목표: Kakao Book API를 통해 조회한 도서 목록 중 사용자가 선택한 책 하나를 DB에 저장하는 기능을 구현한다.
 
-목표: Kakao Book API를 통해 조회한 도서 목록 중 사용자가 선택한 책 하나를 DB에 저장하는 기능을 구현한다.
 ⸻
+
 ✅ 1단계: 이슈 생성 (GitHub)
 1.	GitHub 저장소 → Issues 탭 클릭
 2.	New issue 버튼 클릭
