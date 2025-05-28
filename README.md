@@ -39,6 +39,13 @@
 
 📌 1. Book 테이블 설계 및 엔티티 생성
 
+    import jakarta.persistence.Entity;
+    import jakarta.persistence.GeneratedValue; 
+    import jakarta.persistence.GenerationType;
+    import jakarta.persistence.Id;
+    import lombok.Getter;
+    import lombok.Setter;
+ 
     @Getter
     @Setter
     @Entity
@@ -56,7 +63,11 @@
 ⸻
 
 📌 2. Repository 생성
-
+	
+    import com.camp.nbcamp6thgitprc.entity.Book;
+    import org.springframework.data.jpa.repository.JpaRepository;
+    import org.springframework.stereotype.Repository;
+    
     @Repository
     public interface BookRepository extends JpaRepository<Book, Long> {
     	// 커스텀 메서드 필요 시 추가
@@ -65,6 +76,9 @@
 ⸻
 
 📌 3. SaveBookRequest DTO 정의
+
+    import lombok.Getter;
+    import java.util.List;
 
     @Getter
     public class SaveBookRequest {
@@ -78,6 +92,11 @@
 ⸻
 
 📌 4. BookSaveService 구현
+
+    import com.camp.nbcamp6thgitprc.dto.SaveBookRequest;
+    import com.camp.nbcamp6thgitprc.entity.Book;
+    import com.camp.nbcamp6thgitprc.repository.BookRepository;
+    import org.springframework.stereotype.Service;
 
     @Service
     public class BookSaveService {
@@ -103,6 +122,16 @@
 ⸻
 
 📌 5. Controller API 엔드포인트 추가
+
+    import com.camp.nbcamp6thgitprc.dto.SaveBookRequest;
+    import com.camp.nbcamp6thgitprc.entity.Book;
+    import com.camp.nbcamp6thgitprc.service.BookSaveService;
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.web.bind.annotation.PostMapping;
+    import org.springframework.web.bind.annotation.RequestBody;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
 
     @RestController
     @RequestMapping("/api/books")
