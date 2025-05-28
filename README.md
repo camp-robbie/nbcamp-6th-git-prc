@@ -40,6 +40,7 @@
 📌 1. Book 테이블 설계 및 엔티티 생성
 
     @Getter
+    @Setter
     @Entity
     public class Book {
         @Id 
@@ -58,7 +59,7 @@
 
     @Repository
     public interface BookRepository extends JpaRepository<Book, Long> {
-    // 커스텀 메서드 필요 시 추가
+    	// 커스텀 메서드 필요 시 추가
     }
 
 ⸻
