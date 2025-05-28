@@ -29,7 +29,7 @@
 1.	IntelliJ에서 프로젝트 오픈
 2.	하단 Git 브랜치 패널 또는 VCS → Git → Branches 클릭
 3.	브랜치 생성:
-   	- 이름 예시: feature/124-save-selected-book
+	- 이름 예시: feature/124-save-selected-book
 	- 기반 브랜치: develop
 4.	생성 후 해당 브랜치로 체크아웃
 
@@ -130,15 +130,17 @@
 
 ✅ 4단계: Pull Request 생성 (GitHub)
 
-1.	커밋 후 원격 브랜치 푸시 : git push origin feature/124-save-selected-book
+1.	커밋 후 원격 브랜치 푸시
+	- git push origin feature/124-save-selected-book
 3.	GitHub → Pull requests → New pull request
 4.	PR 설정:
-        - base: develop
-        - compare: feature/124-save-selected-book
-5.	PR 제목 : Feat: 사용자가 선택한 도서 DB 저장 기능 구현
-6.	PR 상세 설명:
-        - 목적, 변경 사항 요약, 이슈 번호
-7.	리뷰어 지정 및 Create pull request 클릭
+	- base: develop
+	- compare: feature/124-save-selected-book
+5.	PR 제목
+   	- Feat: 사용자가 선택한 도서 DB 저장 기능 구현
+7.	PR 상세 설명:
+	- 목적, 변경 사항 요약, 이슈 번호
+8.	리뷰어 지정 및 Create pull request 클릭
 
 ⸻
 
