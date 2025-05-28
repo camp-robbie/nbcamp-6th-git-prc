@@ -29,8 +29,8 @@
 1.	IntelliJ에서 프로젝트 오픈
 2.	하단 Git 브랜치 패널 또는 VCS → Git → Branches 클릭
 3.	브랜치 생성:
-	•	이름 예시: feature/124-save-selected-book
-	•	기반 브랜치: develop
+   	- 이름 예시: feature/124-save-selected-book
+	- 기반 브랜치: develop
 4.	생성 후 해당 브랜치로 체크아웃
 
 ⸻
