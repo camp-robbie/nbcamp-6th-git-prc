@@ -6,22 +6,22 @@
 ✅ 1단계: 이슈 생성 (GitHub)
 1.	GitHub 저장소 → Issues 탭 클릭
 2.	New issue 버튼 클릭
-3.	이슈 제목 작성:
+3.	이슈 제목 작성: 선택한 도서 DB 저장 기능 구현
 
-선택한 도서 DB 저장 기능 구현
+4.이슈 상세 내용 작성:
 
-	이슈 상세 내용 작성:
-	•	배경: 사용자가 검색 결과에서 원하는 도서를 선택하여 개인적으로 보관 가능하게 함
-	•	목표: 선택한 도서 정보를 DB에 저장
-	•	작업 내용:
-	•	Book 테이블 설계
-	•	Book 엔티티 클래스 생성
-	•	BookRepository 인터페이스 생성
-	•	저장 API (/api/books/save) 개발
-	•	저장 요청 데이터 정의 (SaveBookRequest)
-	•	저장 로직 구현 및 응답 처리
-	5.	레이블/담당자/마일스톤 설정 (선택)
-	6.	Submit new issue 클릭 → 이슈 번호 확인 (예: #124)
+ 	배경: 사용자가 검색 결과에서 원하는 도서를 선택하여 개인적으로 보관 가능하게 함
+	목표: 선택한 도서 정보를 DB에 저장
+	작업 내용:
+		• Book 테이블 설계
+		• Book 엔티티 클래스 생성
+		• BookRepository 인터페이스 생성
+		• 저장 API (/api/books/save) 개발
+		• 저장 요청 데이터 정의 (SaveBookRequest)
+		• 저장 로직 구현 및 응답 처리
+
+5.	레이블/담당자/마일스톤 설정 (선택)
+6.	Submit new issue 클릭 → 이슈 번호 확인 (예: #124)
 
 ⸻
 
@@ -29,8 +29,8 @@
 1.	IntelliJ에서 프로젝트 오픈
 2.	하단 Git 브랜치 패널 또는 VCS → Git → Branches 클릭
 3.	브랜치 생성:
-•	이름 예시: feature/124-save-selected-book
-•	기반 브랜치: develop
+	•	이름 예시: feature/124-save-selected-book
+	•	기반 브랜치: develop
 4.	생성 후 해당 브랜치로 체크아웃
 
 ⸻
@@ -123,25 +123,22 @@
 
 📌 6. 커밋
 
-git add .
-git commit -m "Feat: 선택한 도서 정보를 DB에 저장하는 기능 구현 (#124)"
+	git add .
+	git commit -m "Feat: 선택한 도서 정보를 DB에 저장하는 기능 구현 (#124)"
 
 ⸻
 
 ✅ 4단계: Pull Request 생성 (GitHub)
 
-    1.	커밋 후 원격 브랜치 푸시
-        - git push origin feature/124-save-selected-book
-	2.	GitHub → Pull requests → New pull request
-	3.	PR 설정:
+1.	커밋 후 원격 브랜치 푸시 : git push origin feature/124-save-selected-book
+3.	GitHub → Pull requests → New pull request
+4.	PR 설정:
         - base: develop
         - compare: feature/124-save-selected-book
-	4.	PR 제목:
-
-    Feat: 사용자가 선택한 도서 DB 저장 기능 구현
-    5.	PR 상세 설명:
+5.	PR 제목 : Feat: 사용자가 선택한 도서 DB 저장 기능 구현
+6.	PR 상세 설명:
         - 목적, 변경 사항 요약, 이슈 번호
-    6.	리뷰어 지정 및 Create pull request 클릭
+7.	리뷰어 지정 및 Create pull request 클릭
 
 ⸻
 
