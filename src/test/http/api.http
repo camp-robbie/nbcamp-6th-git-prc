@@ -1,3 +1,19 @@
 GET http://localhost:8080/search?query=java&size=5
 
 ###
+
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+      "title": "Java Programming 입문 마스터",
+      "authors": [
+        "이태동",
+        "임정목",
+        "오연재"
+      ],
+      "publisher": "북스홀릭퍼블리싱",
+      "thumbnail": "https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5585286%3Ftimestamp%3D20240810152637",
+      "contents": "책은 자바를 처음 접하는 입문 부분과 객체 지향 개념과 제네릭 도구들 그리고 AWT와 스윙 컴포넌트를 이용한 GUI 프로그래밍, JDBC를 이용하여 다양한 데이터베이스를 검색하는 프로그래밍 등의 다양한 기술을 습득할 수 있도록 구성하였다. 또한 URL을 이용할 수 있는 네트워크 프로그래밍등과 실무에 적용할 수 있도록 고수준의 자바 적용사례의 단위 독립 프로그램을 포함하여 중급 이상의 자바 사용자도 학습할 수 있도록 JAVA 15 버전에 맞게 구성하였다"
+}
+###
